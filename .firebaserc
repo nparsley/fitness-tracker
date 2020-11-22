@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ng-course-recipe-book-27f42": {
+      "hosting": {
+        "fitness-tracker": [
+          "ng-course-recipe-book-27f42"
+        ]
+      }
+    }
+  }
+}
