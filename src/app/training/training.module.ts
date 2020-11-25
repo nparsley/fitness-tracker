@@ -17,8 +17,7 @@ import { TrainingComponent } from './training.component';
     CurrentTrainingComponent,
     NewTrainingComponent,
     PastTrainingComponent,
-    StopTrainingComponent,
-    FormsModule
+    StopTrainingComponent
   ],
   imports: [
     SharedModule,

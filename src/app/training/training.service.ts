@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Subject, Subscription } from 'rxjs';
 import { Exercise } from './exercise.model';
-import { map } from 'rxjs/operators';
+import 'rxjs/add/operator/map';
 import { UIService } from '../shared/ui.service';
 
 @Injectable()
