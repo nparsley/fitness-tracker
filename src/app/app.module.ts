@@ -19,7 +19,7 @@ import { AuthModule } from './auth/auth.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TrainingModule } from './training/training.module';
 import { StoreModule } from '@ngrx/store';
-import { appReducer } from './app.reducer';
+import { reducers } from './app.reducer';
 
 
 @NgModule({
@@ -39,7 +39,7 @@ import { appReducer } from './app.reducer';
     AngularFirestoreModule,
     AuthModule,
     TrainingModule,
-    StoreModule.forRoot({ui: appReducer})
+    StoreModule.forRoot(reducers)
   ],
   providers: [AuthService, TrainingService, UIService],
   bootstrap: [AppComponent],
