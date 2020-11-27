@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable, Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 import { TrainingService } from './training.service';
 import * as fromTraining from './training.reducer';
 
@@ -19,4 +19,4 @@ export class TrainingComponent implements OnInit {
     this.ongoingTraining$ = this.store.select(fromTraining.getIsTraining);
   }
 
-
+}
