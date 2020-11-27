@@ -9,6 +9,7 @@ import * as fromTraining from './training.reducer';
 import { Store } from '@ngrx/store';
 import * as Training from './training.actions';
 import { take } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 
 @Injectable()
