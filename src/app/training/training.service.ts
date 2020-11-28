@@ -31,7 +31,6 @@ export class TrainingService {
       this.fbSubs.push(this.db.collection('availableExercises')
       .snapshotChanges()
       .map(docArray => {
-        // throw(new Error());
         return docArray.map(doc => {
           return {
           id: doc.payload.doc.id,
