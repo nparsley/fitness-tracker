@@ -13,6 +13,7 @@ import { TrainingComponent } from './training.component';
 import { StoreModule } from '@ngrx/store';
 import { trainingReducer } from './training.reducer';
 
+
 @NgModule({
   declarations: [
     TrainingComponent,

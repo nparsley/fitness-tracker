@@ -6,7 +6,6 @@ import { StopTrainingComponent } from './stop-training.component';
 import * as fromTraining from '../training.reducer';
 import { take } from 'rxjs/operators';
 
-
 @Component({
   selector: 'app-current-training',
   templateUrl: './current-training.component.html',
@@ -16,11 +15,7 @@ export class CurrentTrainingComponent implements OnInit {
   progress = 0;
   timer: number;
 
-  constructor(
-    public dialog: MatDialog,
-    private trainingService: TrainingService,
-    private store: Store<fromTraining.State>
-    ) { }
+  constructor(public dialog: MatDialog, private trainingService: TrainingService, private store: Store<fromTraining.State>) { }
 
   ngOnInit(): void {
     this.startOrResumeTimer();
