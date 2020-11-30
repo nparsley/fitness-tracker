@@ -7,10 +7,10 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/fitness-tracker/dist/fitness-tracker'));
+app.use(express.static(__dirname + '/dist/fitness-tracker'));
 
 app.get('/*', (request,response) => {
-  response.sendFile(path.join(__dirname+'/fitness-tracker/dist/fitness-tracker/index.html'));
+  response.sendFile(path.join(__dirname+'/dist/fitness-tracker/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
